@@ -1,9 +1,11 @@
 async function kasininkas(price, cash) {
     console.log(`Priimtos kupiuros: ${cash.join(', ')}.`);
 
-    let total = 0;
+    let total = 0;    // kiek pinigu is viso turi pirkejas
     for (const number of cash) {
         total += number;
+        //console.log(number);
+        //console.log('***' + total);
     }
 
     let answer = '';
